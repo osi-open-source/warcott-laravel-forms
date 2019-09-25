@@ -5,7 +5,7 @@ This library is in progress and not all field inputs from Warcott are supported.
 ## Installation
 Simply add the following line to your `composer.json` and run install/update:
 
-    "osi/warcott-laravel-form": "*"
+    "osi-open-source/warcott-laravel-form": "*"
     
 ## Configuration
 
