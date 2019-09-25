@@ -1,0 +1,46 @@
+{
+    "name": "osi-open-source/warcott-laravel-forms",
+    "description": "Warcott integration for the Laravel Framework",
+    "license": "OSI",
+    "authors": [
+        {
+            "name": "OSI WebTeam",
+            "email": "webteam@objectsystems.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "illuminate/support": ">=5.5.0",
+        "osi/warcott-client": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "guzzlehttp/psr7": "*",
+        "mockery/mockery": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Warcott\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Warcott\\Support\\LaravelFormServiceProvider"
+            ],
+            "aliases": {
+                "WarcottForm": "Warcott\\Support\\Facades\\WarcottForm"
+            }
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
