@@ -1,7 +1,7 @@
 {
     "name": "osi-open-source/warcott-laravel-forms",
     "description": "Warcott integration for the Laravel Framework",
-    "license": "OSI",
+    "license": "MIT",
     "authors": [
         {
             "name": "OSI WebTeam",
