@@ -11,7 +11,7 @@
         @if($field['type'] === "newline") margin-bottom-none @endif">
 
         @includeWhen(!empty($field['labelplaceholder']) && $field['labelplaceholder'] !== 'top', 'warcott::fields.partial.tooltipIcon')
-        <div class="col-lg-{{ !isset($field['labelplaceholder']) || $field['labelplaceholder'] === 'top' ? '12' : (12 - $field['labelplaceholder'])}}">
+        <div class="col-lg-{{ !isset($field['labelplaceholder']) || !is_numeric($field['labelplaceholder']) ? '12' : (12 - $field['labelplaceholder'])}}">
             @includeWhen(!empty($field['labelplaceholder']) && $field['labelplaceholder'] === 'top', 'warcott::fields.partial.tooltipIcon')
 
             @includeIf('warcott::fields.'.($field['type'] ?? 'text'))
